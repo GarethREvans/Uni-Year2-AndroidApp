@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/play_grid_screen"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="0dp"
+    android:orientation="horizontal">
+
+    <TableLayout
+
+        android:id="@+id/play_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="480dp"
+        android:layout_marginTop="0dp">
+
+        <TableRow
+            android:id="@+id/first_row"
+            android:background="@color/colorPrimary">
+
+            <Button
+                android:id="@+id/cell1"
+                style="?android:borderlessButtonStyle"
+                android:layout_width="@dimen/cellDimen_hor"
+                android:layout_height="@dimen/cellDimen_hor"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:background="@color/colorAccent"
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/gameTextSize" />
+
+            <Button
+                android:id="@+id/cell2"
+                style="?android:borderlessButtonStyle"
+                android:layout_width="@dimen/cellDimen_hor"
+                android:layout_height="@dimen/cellDimen_hor"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:layout_marginEnd="@dimen/margin_medium"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:background="@color/colorAccent"
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/gameTextSize" />
+
+            <Button
+                android:id="@+id/cell3"
+                style="?android:borderlessButtonStyle"
+                android:layout_width="@dimen/cellDimen_hor"
+                android:layout_height="@dimen/cellDimen_hor"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:layout_marginEnd="@dimen/margin_medium"
+                android:background="@color/colorAccent"
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/gameTextSize" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/second_row"
+            android:background="@color/colorPrimary">
+
+            <Button
+                android:id="@+id/cell4"
+                style="?android:borderlessButtonStyle"
+                android:layout_width="@dimen/cellDimen_hor"
+                android:layout_height="@dimen/cellDimen_hor"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:background="@color/colorAccent"
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/gameTextSize" />
+
+            <Button
+                android:id="@+id/cell5"
+                style="?android:borderlessButtonStyle"
+                android:layout_width="@dimen/cellDimen_hor"
+                android:layout_height="@dimen/cellDimen_hor"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:layout_marginEnd="@dimen/margin_medium"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:background="@color/colorAccent"
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/gameTextSize" />
+
+            <Button
+                android:id="@+id/cell6"
+                style="?android:borderlessButtonStyle"
+                android:layout_width="@dimen/cellDimen_hor"
+                android:layout_height="@dimen/cellDimen_hor"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:layout_marginEnd="@dimen/margin_medium"
+                android:background="@color/colorAccent"
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/gameTextSize" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/third_row"
+            android:background="@color/colorPrimary">
+
+            <Button
+                android:id="@+id/cell7"
+                style="?android:borderlessButtonStyle"
+                android:layout_width="@dimen/cellDimen_hor"
+                android:layout_height="@dimen/cellDimen_hor"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:background="@color/colorAccent"
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/gameTextSize" />
+
+            <Button
+                android:id="@+id/cell8"
+                style="?android:borderlessButtonStyle"
+                android:layout_width="@dimen/cellDimen_hor"
+                android:layout_height="@dimen/cellDimen_hor"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:layout_marginEnd="@dimen/margin_medium"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:background="@color/colorAccent"
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/gameTextSize" />
+
+            <Button
+                android:id="@+id/cell9"
+                style="?android:borderlessButtonStyle"
+                android:layout_width="@dimen/cellDimen_hor"
+                android:layout_height="@dimen/cellDimen_hor"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:layout_marginEnd="@dimen/margin_medium"
+                android:background="@color/colorAccent"
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/gameTextSize" />
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="498dp">
+    <Button
+        android:id="@+id/newGame"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:background="@color/colorAccent"
+        android:paddingBottom="@dimen/defaultPadding"
+        android:paddingTop="@dimen/defaultPadding"
+        android:text="@string/menuNewGameButton"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="@string/defaultFont"
+        android:textSize="@dimen/defaultTextSize"/>
+    </LinearLayout>
+</RelativeLayout>

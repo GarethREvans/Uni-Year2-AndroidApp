@@ -1,0 +1,21 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="cellDimen">188dp</dimen>
+    <dimen name="cellDimen_hor">154dp</dimen>
+    <dimen name="margin_medium">9dp</dimen>
+    <dimen name="gameTextSize">100sp</dimen>
+    <dimen name="defaultTextSize">50sp</dimen>
+    <dimen name="defaultPadding">25dp</dimen>
+    <dimen name="margin_small">3dp</dimen>
+    <dimen name="alert_dialog_text_size">20sp</dimen>
+    <dimen name="margin_very_large">50dp</dimen>
+    <dimen name="info_icon_size">50dp</dimen>
+    <dimen name="logo_size">200dp</dimen>
+    <dimen name="padding_small">10dp</dimen>
+    <dimen name="small_text_size">40sp</dimen>
+    <dimen name="edit_text_width">500dp</dimen>
+    <dimen name="stat_label">262dp</dimen>
+    <dimen name="stat_value">311dp</dimen>
+    <dimen name="medium_text_size">45sp</dimen>
+</resources>

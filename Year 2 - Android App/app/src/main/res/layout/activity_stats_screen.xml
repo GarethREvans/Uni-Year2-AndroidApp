@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/stats_screen_scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="0dp"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/stats_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:background="@color/colorAccent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/games_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@string/defaultFont"
+            android:padding="@dimen/padding_small"
+            android:text="@string/games_label"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/defaultTextSize" />
+
+        <TextView
+            android:id="@+id/games_medium_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginBottom="0dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@string/defaultFont"
+            android:padding="@dimen/padding_small"
+            android:text="@string/medium_label"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/defaultTextSize"
+            android:gravity="center"/>
+
+        <TableLayout
+            android:id="@+id/mstats_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="@color/colorPrimary">
+
+            <TableRow android:background="@color/colorPrimary">
+
+                <TextView
+                    android:id="@+id/mgames_played_label"
+                    android:layout_width="@dimen/stat_label"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="@string/defaultFont"
+                    android:gravity="end"
+                    android:padding="@dimen/padding_small"
+                    android:text="@string/games_played"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/medium_text_size" />
+
+                <TextView
+                    android:id="@+id/mgames_played_value"
+                    android:layout_width="@dimen/stat_value"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:background="@color/colorAccent"
+                    android:fontFamily="@string/defaultFont"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_small"
+                    android:text=""
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/medium_text_size" />
+            </TableRow>
+
+            <TableRow android:background="@color/colorPrimary">
+
+                <TextView
+                    android:id="@+id/mgames_won_label"
+                    android:layout_width="@dimen/stat_label"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="@string/defaultFont"
+                    android:gravity="end"
+                    android:padding="@dimen/padding_small"
+                    android:text="@string/games_won"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/medium_text_size"/>
+
+                <TextView
+                    android:id="@+id/mgames_won_value"
+                    android:layout_width="@dimen/stat_value"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:background="@color/colorAccent"
+                    android:fontFamily="@string/defaultFont"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_small"
+                    android:text=""
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/medium_text_size" />
+            </TableRow>
+
+            <TableRow android:background="@color/colorPrimary">
+
+                <TextView
+                    android:id="@+id/mgames_drawn_label"
+                    android:layout_width="@dimen/stat_label"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="@string/defaultFont"
+                    android:gravity="end"
+                    android:padding="@dimen/padding_small"
+                    android:text="@string/games_drawn"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/medium_text_size"/>
+
+                <TextView
+                    android:id="@+id/mgames_drawn_value"
+                    android:layout_width="@dimen/stat_value"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:background="@color/colorAccent"
+                    android:fontFamily="@string/defaultFont"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_small"
+                    android:text=""
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/medium_text_size"/>
+            </TableRow>
+
+            <TableRow android:background="@color/colorPrimary"
+                android:layout_marginBottom="@dimen/margin_medium">
+
+                <TextView
+                    android:id="@+id/mgames_lost_label"
+                    android:layout_width="@dimen/stat_label"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="@string/defaultFont"
+                    android:gravity="end"
+                    android:padding="@dimen/padding_small"
+                    android:text="@string/games_lost"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/medium_text_size"/>
+
+                <TextView
+                    android:id="@+id/mgames_lost_value"
+                    android:layout_width="@dimen/stat_value"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:background="@color/colorAccent"
+                    android:fontFamily="@string/defaultFont"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_small"
+                    android:text=""
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/medium_text_size"/>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/games_hard_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginBottom="0dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@string/defaultFont"
+            android:padding="@dimen/padding_small"
+            android:text="@string/hard_label"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/defaultTextSize"
+            android:gravity="center"/>
+
+        <TableLayout
+            android:id="@+id/hstats_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="@color/colorPrimary">
+
+            <TableRow android:background="@color/colorPrimary">
+
+                <TextView
+                    android:id="@+id/hgames_played_label"
+                    android:layout_width="@dimen/stat_label"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="@string/defaultFont"
+                    android:gravity="end"
+                    android:padding="@dimen/padding_small"
+                    android:text="@string/games_played"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/medium_text_size" />
+
+                <TextView
+                    android:id="@+id/hgames_played_value"
+                    android:layout_width="@dimen/stat_value"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:background="@color/colorAccent"
+                    android:fontFamily="@string/defaultFont"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_small"
+                    android:text=""
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/medium_text_size"/>
+            </TableRow>
+
+            <TableRow android:background="@color/colorPrimary">
+
+                <TextView
+                    android:id="@+id/hgames_won_label"
+                    android:layout_width="@dimen/stat_label"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="@string/defaultFont"
+                    android:gravity="end"
+                    android:padding="@dimen/padding_small"
+                    android:text="@string/games_won"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/medium_text_size"/>
+
+                <TextView
+                    android:id="@+id/hgames_won_value"
+                    android:layout_width="@dimen/stat_value"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:background="@color/colorAccent"
+                    android:fontFamily="@string/defaultFont"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_small"
+                    android:text=""
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/medium_text_size"/>
+            </TableRow>
+
+            <TableRow android:background="@color/colorPrimary">
+
+                <TextView
+                    android:id="@+id/hgames_drawn_label"
+                    android:layout_width="@dimen/stat_label"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="@string/defaultFont"
+                    android:gravity="end"
+                    android:padding="@dimen/padding_small"
+                    android:text="@string/games_drawn"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/medium_text_size"/>
+
+                <TextView
+                    android:id="@+id/hgames_drawn_value"
+                    android:layout_width="@dimen/stat_value"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:background="@color/colorAccent"
+                    android:fontFamily="@string/defaultFont"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_small"
+                    android:text=""
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/medium_text_size"/>
+            </TableRow>
+
+            <TableRow android:background="@color/colorPrimary"
+                android:layout_marginBottom="@dimen/margin_medium">
+
+                <TextView
+                    android:id="@+id/hgames_lost_label"
+                    android:layout_width="@dimen/stat_label"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="@string/defaultFont"
+                    android:gravity="end"
+                    android:padding="@dimen/padding_small"
+                    android:text="@string/games_lost"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/medium_text_size"/>
+
+                <TextView
+                    android:id="@+id/hgames_lost_value"
+                    android:layout_width="@dimen/stat_value"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:background="@color/colorAccent"
+                    android:fontFamily="@string/defaultFont"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_small"
+                    android:text=""
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/medium_text_size"/>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/games_impossible_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginBottom="0dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@string/defaultFont"
+            android:padding="@dimen/padding_small"
+            android:text="@string/impossible_label"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/defaultTextSize"
+            android:gravity="center"/>
+
+        <TableLayout
+            android:id="@+id/istats_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="@color/colorPrimary">
+
+            <TableRow android:background="@color/colorPrimary">
+
+                <TextView
+                    android:id="@+id/igames_played_label"
+                    android:layout_width="@dimen/stat_label"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="@string/defaultFont"
+                    android:gravity="end"
+                    android:padding="@dimen/padding_small"
+                    android:text="@string/games_played"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/medium_text_size"/>
+
+                <TextView
+                    android:id="@+id/igames_played_value"
+                    android:layout_width="@dimen/stat_value"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:background="@color/colorAccent"
+                    android:fontFamily="@string/defaultFont"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_small"
+                    android:text=""
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/medium_text_size"/>
+            </TableRow>
+
+            <TableRow android:background="@color/colorPrimary">
+
+                <TextView
+                    android:id="@+id/igames_won_label"
+                    android:layout_width="@dimen/stat_label"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="@string/defaultFont"
+                    android:gravity="end"
+                    android:padding="@dimen/padding_small"
+                    android:text="@string/games_won"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/medium_text_size"/>
+
+                <TextView
+                    android:id="@+id/igames_won_value"
+                    android:layout_width="@dimen/stat_value"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:background="@color/colorAccent"
+                    android:fontFamily="@string/defaultFont"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_small"
+                    android:text=""
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/medium_text_size"/>
+            </TableRow>
+
+            <TableRow android:background="@color/colorPrimary">
+
+                <TextView
+                    android:id="@+id/igames_drawn_label"
+                    android:layout_width="@dimen/stat_label"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="@string/defaultFont"
+                    android:gravity="end"
+                    android:padding="@dimen/padding_small"
+                    android:text="@string/games_drawn"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/medium_text_size"/>
+
+                <TextView
+                    android:id="@+id/igames_drawn_value"
+                    android:layout_width="@dimen/stat_value"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:background="@color/colorAccent"
+                    android:fontFamily="@string/defaultFont"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_small"
+                    android:text=""
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/medium_text_size"/>
+            </TableRow>
+
+            <TableRow android:background="@color/colorPrimary"
+                android:layout_marginBottom="@dimen/margin_medium">
+
+                <TextView
+                    android:id="@+id/igames_lost_label"
+                    android:layout_width="@dimen/stat_label"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="@string/defaultFont"
+                    android:gravity="end"
+                    android:padding="@dimen/padding_small"
+                    android:text="@string/games_lost"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/medium_text_size"/>
+
+                <TextView
+                    android:id="@+id/igames_lost_value"
+                    android:layout_width="@dimen/stat_value"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:background="@color/colorAccent"
+                    android:fontFamily="@string/defaultFont"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_small"
+                    android:text=""
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/medium_text_size"/>
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/reset_stats_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/colorAccent"
+            android:fontFamily="@string/defaultFont"
+            android:paddingBottom="@dimen/padding_small"
+            android:paddingTop="@dimen/padding_small"
+            android:text="@string/resetStats"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/defaultTextSize" />
+    </LinearLayout>
+</ScrollView>

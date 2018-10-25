@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.co5025.co5025assignment">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/gamePageTitle" />
+        <activity
+            android:name=".HomeScreen"
+            android:label="@string/mainTitle" />
+        <activity
+            android:name=".splashScreen"
+            android:icon="@drawable/app_logo"
+            android:label="@string/mainTitle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity_login_screen"
+            android:label="@string/loginPageTitle" />
+        <activity
+            android:name=".activity_register_screen"
+            android:label="@string/registerPageTitle" />
+        <activity
+            android:name=".stats_screen"
+            android:label="@string/stats_screen"></activity>
+        <activity android:name=".settings_screen"
+            android:label="@string/settings_screen"></activity>
+    </application>
+
+</manifest>

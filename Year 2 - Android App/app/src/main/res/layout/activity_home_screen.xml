@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_screen_scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="0dp"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/info_icon"
+            android:layout_width="@dimen/info_icon_size"
+            android:layout_height="@dimen/info_icon_size"
+            android:layout_gravity="end"
+            android:layout_margin="20dp"
+            android:contentDescription="@string/info_description"
+            app:srcCompat="@drawable/info" />
+
+        <ImageView
+            android:id="@+id/game_logo"
+            android:layout_width="@dimen/logo_size"
+            android:layout_height="@dimen/logo_size"
+            android:layout_marginBottom="@dimen/margin_very_large"
+            android:layout_marginLeft="200dp"
+            android:layout_marginRight="200dp"
+            android:layout_marginTop="-20dp"
+            android:contentDescription="@string/logo_description"
+            app:srcCompat="@drawable/app_logo" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/menuNewGameButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="@dimen/margin_small"
+                android:background="@color/colorAccent"
+                android:fontFamily="@string/defaultFont"
+                android:paddingBottom="@dimen/defaultPadding"
+                android:paddingTop="@dimen/defaultPadding"
+                android:text="@string/menuNewGameButton"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/defaultTextSize" />
+
+            <Button
+                android:id="@+id/menuAccountButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@color/colorAccent"
+                android:fontFamily="@string/defaultFont"
+                android:paddingBottom="@dimen/defaultPadding"
+                android:paddingTop="@dimen/defaultPadding"
+                android:text="@string/menuAccountButton"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/defaultTextSize" />
+
+            <Button
+                android:id="@+id/menuStatsButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@color/colorAccent"
+                android:fontFamily="@string/defaultFont"
+                android:paddingBottom="@dimen/defaultPadding"
+                android:paddingTop="@dimen/defaultPadding"
+                android:text="@string/menuStatsButton"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/defaultTextSize" />
+
+            <Button
+                android:id="@+id/menuSettingsButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@color/colorAccent"
+                android:fontFamily="@string/defaultFont"
+                android:paddingBottom="@dimen/defaultPadding"
+                android:paddingTop="@dimen/defaultPadding"
+                android:text="@string/menuSettingsButton"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/defaultTextSize" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

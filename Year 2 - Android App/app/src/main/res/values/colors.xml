@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#C63D0F</color>
+    <color name="colorPrimaryDark">#3B3738</color>
+    <color name="colorAccent">#FDF3E7</color>
+    <color name="colorLose">#cc0000</color>
+    <color name="colorDraw">#CCCC00</color>
+    <color name="colorWin">#00cc00</color>
+</resources>
+
+
+<!--<color name="colorPrimary">#C63D0F</color>-->
+<!--<color name="colorPrimaryDark">#3B3738</color>-->
+<!--<color name="colorAccent">#FDF3E7</color>-->
+
+<!--<color name="colorPrimary">#2B2B2B</color>-->
+<!--<color name="colorPrimaryDark">#DE1B1B</color>-->
+<!--<color name="colorAccent">#F6F6F6</color>-->
+
+<!--<color name="colorPrimary">#153151</color>-->
+<!--<color name="colorPrimaryDark">#ec8013</color>-->
+<!--<color name="colorAccent">#D9D9D9</color>-->
